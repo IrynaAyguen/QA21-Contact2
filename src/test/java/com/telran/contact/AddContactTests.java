@@ -20,9 +20,9 @@ public class AddContactTests extends TestBase{
     }
     @Test
     public void addContactPositiveTest(){
-        int i = (int) ((System.currentTimeMillis()) / 1000) % 3600; // vozvrashaet tekushee vremy v sekundach
+        int i = (int) ((System.currentTimeMillis()) / 1000) % 3600; // return secunds of current time
         //click on tab Add
-        click(By.cssSelector("a:nth-child(5)"));
+
         pause(1000);
         //fill all fields
         type(By.cssSelector("[placeholder='Name']"),"Karl");
@@ -33,20 +33,16 @@ public class AddContactTests extends TestBase{
         type(By.cssSelector("input:nth-child(6)"),"torwart");
 
         //click on the Save button
-        //jump(); //1 variant, esli ekran malenki i knopka save ne najalasy
-
-        // 2 variant, esli ekran malenki i knopka save ne najalasy
-        //clickWithAction();
-
         click(By.cssSelector(".add_form__2rsm2 button"));
+        //1 variant, if window is small and Save button is not displaied
+        //jump();
+
+        // 2 variant, if window is small and Save button is not displaied
+        //clickWithAction(".add_form__2rsm2 button");
+
 
         //Assert contact created
 
     }
 
-    public void jump() {
-        driver.findElement(By.cssSelector(".add_form__2rsm2 button")).sendKeys(Keys.CONTROL,Keys.ADD);
-    }
-
 }
-//  input:nth-child(1)

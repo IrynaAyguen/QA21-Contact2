@@ -20,7 +20,7 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.get("https://contacts-app.tobbymarshall815.vercel.app");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
     }
 
@@ -110,5 +110,17 @@ public class TestBase {
 
     public void pause(int millis){
         new WebDriverWait(driver, Duration.ofSeconds(millis));
+    }
+
+    public void jump() {
+        driver.findElement(By.cssSelector(".add_form__2rsm2 button")).sendKeys(Keys.CONTROL,Keys.ADD);
+    }
+
+    public boolean isNoContactsFormPresent() {
+        return isElementPresent(By.cssSelector(".contact-page_message__2qafk"));
+    }
+
+    public boolean isContactsListFormPresent() {
+        return isElementPresent(By.cssSelector(".contact-page_leftdiv__yhyke"));
     }
 }

@@ -52,7 +52,7 @@ public class HeaderTest extends TestBase {
     public void headerTabContactsTest() {
         userLogin();   //user should be logged in
         click(By.xpath("//a[contains(.,'CONTACTS')]"));
-        Assert.assertTrue(isElementPresent(By.cssSelector(".contact-page_message__2qafk")));
+        Assert.assertTrue(isNoContactsFormPresent());
     }
 
     @Test
