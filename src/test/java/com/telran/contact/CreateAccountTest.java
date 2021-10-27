@@ -10,34 +10,26 @@ public class CreateAccountTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         // login not present
-        if (!isElementPresent(By.xpath("//a[contains(.,'LOGIN')]"))) {
+        if (!isLoginTabPresent()) {
             // click on Logout button
-            driver.findElement(By.xpath("//button[contains(.,'Sign Out')]")).click();
+            click(By.xpath("//button[contains(.,'Sign Out')]"));
         }
     }
 
     @Test
     public void registrationPositiveTest() {
         // click on Login
-        driver.findElement(By.xpath("//a[contains(.,'LOGIN')]")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector(".login_login__3EHKB")));
+        click(By.xpath("//a[contains(.,'LOGIN')]"));
+        Assert.assertTrue(isLoginRegistrationFormPresent());
         // fill registration form
-        driver.findElement(By.cssSelector("[placeholder='Email']")).click();
-        driver.findElement(By.cssSelector("[placeholder='Email']")).clear();
-        driver.findElement(By.cssSelector("[placeholder='Email']")).sendKeys("iryna.a@web.de");
-
-        driver.findElement(By.cssSelector("[placeholder='Password']")).click();
-        driver.findElement(By.cssSelector("[placeholder='Password']")).clear();
-        driver.findElement(By.cssSelector("[placeholder='Password']")).sendKeys("Iryna111_");
+        type(By.cssSelector("[placeholder='Email']"), "iryna.a@web.de");
+        type(By.cssSelector("[placeholder='Password']"), "Iryna111_");
 
         // click on regisration button
-        driver.findElement(By.xpath("//button[contains(., ' Registration')]")).click();
+        click(By.xpath("//button[contains(., ' Registration')]"));
         // check Logout button displied
-        Assert.assertTrue(isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
+        Assert.assertTrue(isSingOutTabPresent());
     }
 
-//    [placeholder='Email']
-//    [placeholder='Password']
-//    //button[contains(., ' Registration')]
 
 }
