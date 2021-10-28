@@ -1,51 +1,54 @@
 package com.telran.contact;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 
 public class DeleteContactTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        // log in
-        if (!isSingOutTabPresent()) {
-            click(By.xpath("//a[contains(.,'LOGIN')]"));
-            type(By.cssSelector("[placeholder='Email']"), "iryna.a@web.de");
-            type(By.cssSelector("[placeholder='Password']"), "Iryna111_");
-            click(By.xpath("//button[contains(., ' Login')]"));
+        if (!isLoginTabPresent()) {
+            // click on Logout button
+            clickOnSignOutButton();
         }
-        // add a contact
+
+        clickOnLoginTab();
+        login(new User()
+                .setEmail("ira@web.de")
+                .setPassword("Ira123123_"));
+
         int i = (int) ((System.currentTimeMillis()) / 1000) % 3600; // return 4 nubmer
-        click(By.cssSelector("a:nth-child(5)"));
-        pause(1000);
-        type(By.cssSelector("[placeholder='Name']"), "Iryna");
-        type(By.cssSelector("input:nth-child(2)"), "Adam");
-        //type(By.cssSelector("input:nth-child(3)"), "+49-0175-852-" + i);
-        type(By.cssSelector("input:nth-child(3)"), "+49-0111-111-1112");
-        //System.out.println("new contact has telephon number: " + "+49-0175-852-" + i); //print for control
-        type(By.cssSelector("input:nth-child(4)"), "adam" + i + "@dm.com");
-        type(By.cssSelector("input:nth-child(5)"), "Koblenz");
-        type(By.cssSelector("input:nth-child(6)"), "QA");
-        click(By.cssSelector(".add_form__2rsm2 button"));
+        addNewContact("Karl", "Adam", "2222222", "adam" + i + "@dm.com", "Koblenz", "torwart");
+
     }
 
+
     @Test
-    public void deleteContact() {
-        click(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'+49-0111-111-1112')]"));
+    public void deleteContact() throws InterruptedException {
+        click(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'2222222')]"));
 
         click(By.xpath("//button[contains(., 'Remove')]"));
-        //Assert.assertTrue(isNoContactsFormPresent());         // if no contacts more
-        //Assert.assertTrue(isContactsListFormPresent());     // if other contacts present
-        pause(9000);
-        //Assert.assertTrue(isElementPresent(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'+49-0111-111-1112')]")));     // if other contacts present
+        //Assert.assertTrue(isNoContactsFormPresent() || isContactsListFormPresent());
 
-        if (isElementPresent(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'+49-0111-111-1112')]"))) {
+// from Book - wait
+//    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+//    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'1234567')]")));
+
+        Thread.sleep(2000);  //Thread.sleep-  from teacher Iryna
+
+        // print of result
+        if (isElementPresent(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'2222222')]"))) {
             System.out.println("Contact is not deleted");
         }else{
             System.out.println("Contact is deleted");
         }
+        Assert.assertTrue(!isElementPresent(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'2222222')]")));
     }
 }

@@ -13,7 +13,7 @@ public class HeaderTest extends TestBase {
         System.out.println("Site is opened! HomeComponent:" + isElementPresent2(By.cssSelector("div:nth-child(2) >div >div")));
 
         if (!isLoginTabPresent()) {
-            click(By.xpath("//button[contains(.,'Sign Out')]"));
+            clickOnSignOutButton();
         }
     }
 
@@ -36,29 +36,45 @@ public class HeaderTest extends TestBase {
 
     @Test
     public void headerTabLoginTest() {
-        click(By.xpath("//a[contains(.,'LOGIN')]"));
+        clickOnLoginTab();
         Assert.assertTrue(isLoginRegistrationFormPresent());
 
     }
 
     @Test
     public void headerTabAddTest() {
-        userLogin();  //user should be logged in
+       //user should be logged in
+        clickOnLoginTab();
+        login(new User()
+                .setEmail("ira@web.de")
+                .setPassword("Ira123123_"));
+
         click(By.xpath("//a[contains(.,'ADD')]"));
         Assert.assertTrue(isElementPresent(By.cssSelector(".add_form__2rsm2")));
     }
 
     @Test
-    public void headerTabContactsTest() {
-        userLogin();   //user should be logged in
+    public void headerTabContactsTest() throws InterruptedException {
+        //user should be logged in
+        clickOnLoginTab();
+        login(new User()
+                .setEmail("ira@web.de")
+                .setPassword("Ira123123_"));
+
         click(By.xpath("//a[contains(.,'CONTACTS')]"));
-        Assert.assertTrue(isNoContactsFormPresent());
+        Thread.sleep(2000);
+        Assert.assertTrue(isNoContactsFormPresent() || isContactsListFormPresent());
     }
 
     @Test
     public void headerTabSignOutTest() {
-        userLogin();   //user should be logged in
-        click(By.xpath("//button[contains(.,'Sign Out')]"));
+        //user should be logged in
+        clickOnLoginTab();
+        login(new User()
+                .setEmail("ira@web.de")
+                .setPassword("Ira123123_"));
+
+        clickOnSignOutButton();
         Assert.assertTrue(isLoginRegistrationFormPresent());
     }
 

@@ -1,6 +1,5 @@
 package com.telran.contact;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,24 +11,31 @@ public class CreateAccountTest extends TestBase {
         // login not present
         if (!isLoginTabPresent()) {
             // click on Logout button
-            click(By.xpath("//button[contains(.,'Sign Out')]"));
+            clickOnSignOutButton();
         }
     }
 
     @Test
     public void registrationPositiveTest() {
-        // click on Login
-        click(By.xpath("//a[contains(.,'LOGIN')]"));
-        Assert.assertTrue(isLoginRegistrationFormPresent());
-        // fill registration form
-        type(By.cssSelector("[placeholder='Email']"), "iryna.a@web.de");
-        type(By.cssSelector("[placeholder='Password']"), "Iryna111_");
-
-        // click on regisration button
-        click(By.xpath("//button[contains(., ' Registration')]"));
-        // check Logout button displied
-        Assert.assertTrue(isSingOutTabPresent());
+//        // click on Login
+//        clickOnLoginTab();
+//        Assert.assertTrue(isLoginRegistrationFormPresent());
+//        createNewAccount(new User()
+//                .setEmail("ira@web.de")
+//                .setPassword("Ira123123_"));
+//        // check Logout button displied
+//        Assert.assertTrue(isSingOutTabPresent());
     }
 
+    @Test
+    public void registrationNegativeWithoutPasswordTest() {
+        // click on Login
+        clickOnLoginTab();
+        Assert.assertTrue(isLoginRegistrationFormPresent());
+        createNewAccount(new User()
+                .setEmail("ira@web.de"));
+        // check Logout button displied
+        Assert.assertTrue(isAlertPresent());
+    }
 
 }
