@@ -21,8 +21,8 @@ public class RemoveContactTests extends TestBase {
                     .setPassword("Ira123123_"));
 
            int i = (int) ((System.currentTimeMillis()) / 1000) % 3600; // return 4 nubmer
-            addNewContact("Karl", "Adam", "1111111", "adam" + i + "@dm.com", "Koblenz", "torwart");
-        System.out.println("111");
+            addNewContact("Karl", "Adam", "3333333", "adam" + i + "@dm.com", "Koblenz", "torwart");
+
         }
 
 

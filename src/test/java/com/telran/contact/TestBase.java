@@ -178,7 +178,7 @@ public class TestBase {
 
     public void removeContact() {
         if (!isContactListEmpty()) {
-            click(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'1111111')]"));
+            click(By.xpath("//div[@class='contact-item_card__2SOIM'] /h3[contains(.,'3333333')]"));
             click(By.xpath("//button[contains(., 'Remove')]"));
         }
     }

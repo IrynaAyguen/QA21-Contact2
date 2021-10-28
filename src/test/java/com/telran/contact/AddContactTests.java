@@ -21,17 +21,17 @@ public class AddContactTests extends TestBase{
     @Test
     public void addContactPositiveTest(){
         int i = (int) ((System.currentTimeMillis()) / 1000) % 3600; // return secunds of current time
-        addNewContact("Karl", "Adam", "1234567" + i, "adam" + i + "@dm.com", "Koblenz", "torwart");
+        addNewContact("Karl", "Adam", "1111111", "adam" + i + "@dm.com", "Koblenz", "torwart");
+               // phone and email should be U N I Q U E ! ! ! ! ! ! ! ! !
+
+        //Assert contact created
+        Assert.assertTrue(isContactCreated("1111111"));
+
         //1 variant, if window is small and Save button is not displaied
         //jump();
 
         // 2 variant, if window is small and Save button is not displaied
         //clickWithAction(".add_form__2rsm2 button");
-
-
-        //Assert contact created
-        Assert.assertTrue(isContactCreated("1234567"));
-
     }
 
 }
