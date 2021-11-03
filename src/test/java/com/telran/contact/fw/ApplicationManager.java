@@ -9,13 +9,12 @@ public class ApplicationManager {
 
     static WebDriver driver;
 
-
-    UserHelper user;  // declaration of helpers
+    UserHelper user;         // declaration of Helpers
     ContactHelper contact;
     HomeHelper home;
     HeaderHelper header;
 
-    public UserHelper getUser() {  //initialisation of Helpers
+    public UserHelper getUser() {      //difination of Helpers
         return user;
     }
 
@@ -39,7 +38,7 @@ public class ApplicationManager {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        user= new UserHelper(driver); // difination of helpers
+        user = new UserHelper(driver);          // initialisation of Helpers
         contact = new ContactHelper(driver);
         home = new HomeHelper(driver);
         header = new HeaderHelper(driver);
@@ -48,7 +47,6 @@ public class ApplicationManager {
     public void stop() {
         driver.quit();
     }
-
 
 
 }
