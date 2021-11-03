@@ -30,3 +30,11 @@ task testContact(type: Test) {
         systemProperty 'browser', "${browser}"
     }
 }
+task testHomePageAndHeader(type: Test) {
+    useTestNG() {
+        suites 'src/test/resources/testng_HomePageAndHeader.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}

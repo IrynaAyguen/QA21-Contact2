@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HomePageAndHeader" verbose="1">
+
+    <test name="HomePageAndHeader">
+        <classes>
+            <class name="com.telran.contact.tests.HeaderTests">
+                <methods>
+                    <exclude name="headerLogoTest"/>
+                </methods>
+            </class>
+            <class name="com.telran.contact.tests.OpenHomePageTests"/>
+        </classes>
+    </test>
+</suite>

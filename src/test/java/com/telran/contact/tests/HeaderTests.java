@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HeaderTest extends TestBase {
+public class HeaderTests extends TestBase {
 
     // precondition: home page should be opened; user should be logged out
     @BeforeMethod
