@@ -1,0 +1,3 @@
+10:40:05.143 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveTest
+10:40:17.427 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveTest
+10:40:17.428 [main] INFO  com.telran.contact.tests.TestBase - ==========================

@@ -1,0 +1,6 @@
+09:57:15.984 [main] INFO  com.telran.contact.tests.TestBase - Start test loginRegisteredUserNegativeWithWrongPasswordTest
+09:57:17.061 [main] INFO  com.telran.contact.tests.TestBase - Stop test loginRegisteredUserNegativeWithWrongPasswordTest
+09:57:17.062 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+09:57:17.065 [main] INFO  com.telran.contact.tests.TestBase - Start test loginRegisteredUserPositiveTest
+09:57:17.614 [main] INFO  com.telran.contact.tests.TestBase - Stop test loginRegisteredUserPositiveTest
+09:57:17.614 [main] INFO  com.telran.contact.tests.TestBase - ==========================

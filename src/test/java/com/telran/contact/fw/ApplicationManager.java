@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
@@ -36,7 +37,7 @@ public class ApplicationManager {
         //driver = new EdgeDriver();
         driver.get("https://contacts-app.tobbymarshall815.vercel.app");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         user = new UserHelper(driver);          // initialisation of Helpers
         contact = new ContactHelper(driver);

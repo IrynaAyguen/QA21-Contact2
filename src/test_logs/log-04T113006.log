@@ -1,0 +1,12 @@
+11:30:09.275 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [com.telran.contact.models.Contact@4cc61eb1]
+11:30:23.544 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:30:23.544 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:30:23.546 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [com.telran.contact.models.Contact@286b39c2]
+11:30:26.939 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:30:26.942 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:30:26.944 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [com.telran.contact.models.Contact@38a1c423]
+11:30:30.234 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:30:30.235 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:30:30.237 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [com.telran.contact.models.Contact@3971f0fe]
+11:30:33.555 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:30:33.555 [main] INFO  com.telran.contact.tests.TestBase - ==========================

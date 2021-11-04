@@ -1,0 +1,60 @@
+12:47:57.164 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='test@gmail.com', password='Aa1234$'}]
+12:47:58.225 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:47:58.225 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:47:58.227 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='test@gmail.com', password='A'}]
+12:47:59.238 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:47:59.238 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:47:59.239 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='test@gmail.com', password='aa12345$'}]
+12:48:00.258 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:00.258 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:00.259 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='test@gmail.com', password='AA12345$'}]
+12:48:01.213 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:01.214 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:01.216 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='Aaaaaaa$'}]
+12:48:02.201 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:02.202 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:02.204 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='Aa123456'}]
+12:48:03.212 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:03.213 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:03.213 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='12345678'}]
+12:48:04.206 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:04.207 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:04.209 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='Aaaaaaaa'}]
+12:48:05.234 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:05.234 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:05.234 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='AAAAAAAAA'}]
+12:48:06.232 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:06.232 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:06.233 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='"irina@gmail.com', password='""@'&%%$§""""$"""'}]
+12:48:07.223 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:07.223 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:07.226 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='AA123456'}]
+12:48:08.214 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:08.214 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:08.216 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='aa123456'}]
+12:48:09.213 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:09.214 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:09.215 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmail.com', password='1234567$'}]
+12:48:10.245 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:10.246 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:10.247 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='@.d', password='Aa12345$'}]
+12:48:11.260 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:11.261 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:11.262 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='i@gmail.c', password='Aa12345$'}]
+12:48:12.276 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:12.277 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:12.279 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@g.', password='Aa12345$'}]
+12:48:13.293 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:13.293 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:13.293 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irinagmail.qq', password='Aa12345$'}]
+12:48:14.314 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:14.314 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:14.316 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='irina@gmailcom', password='Aa12345$'}]
+12:48:15.323 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:15.323 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:15.324 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='123456', password='Aa12345$'}]
+12:48:16.338 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:16.339 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:48:16.341 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [User{email='.12345', password='Aa12345$'}]
+12:48:17.356 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:48:17.356 [main] INFO  com.telran.contact.tests.TestBase - ==========================

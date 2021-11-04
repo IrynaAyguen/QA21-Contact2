@@ -1,0 +1,12 @@
+11:36:45.988 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [Contact{phone='1111111111234', email='oliv+1@web.de'}]
+11:37:00.133 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:37:00.134 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:37:00.136 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [Contact{phone='222222222234', email='oliv+2@web.de'}]
+11:37:03.531 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:37:03.532 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:37:03.534 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [Contact{phone='333333333234', email='oliv3@web.de'}]
+11:37:06.859 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:37:06.859 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+11:37:06.862 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromCSVTestwith data: [Contact{phone='444444444434', email='oliv4@web.de'}]
+11:37:10.227 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromCSVTest
+11:37:10.227 [main] INFO  com.telran.contact.tests.TestBase - ==========================

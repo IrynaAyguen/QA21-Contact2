@@ -1,0 +1,6 @@
+10:04:21.923 [main] INFO  com.telran.contact.tests.TestBase - Start test loginRegisteredUserNegativeWithWrongPasswordTest
+10:04:23.071 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method loginRegisteredUserNegativeWithWrongPasswordTest
+10:04:23.072 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+10:04:23.075 [main] INFO  com.telran.contact.tests.TestBase - Start test loginRegisteredUserPositiveTest
+10:04:23.635 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method loginRegisteredUserPositiveTest
+10:04:23.635 [main] INFO  com.telran.contact.tests.TestBase - ==========================

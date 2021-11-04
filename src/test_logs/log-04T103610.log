@@ -1,0 +1,9 @@
+10:36:12.866 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTest
+10:36:25.069 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromDataProviderTest
+10:36:25.070 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+10:36:25.071 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTest
+10:36:35.268 [main] ERROR com.telran.contact.tests.TestBase - FAILED: test method addContactPositiveFromDataProviderTest
+10:36:35.268 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+10:36:35.272 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTest
+10:36:36.695 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromDataProviderTest
+10:36:36.695 [main] INFO  com.telran.contact.tests.TestBase - ==========================

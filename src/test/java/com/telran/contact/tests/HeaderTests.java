@@ -11,7 +11,7 @@ public class HeaderTests extends TestBase {
     // precondition: home page should be opened; user should be logged out
     @BeforeMethod
     public void ensurePreconditions() {
-        System.out.println("Site is opened! HomeComponent:" + app.getUser().isElementPresent2(By.cssSelector("div:nth-child(2) >div >div")));
+        //System.out.println("Site is opened! HomeComponent:" + app.getUser().isElementPresent2(By.cssSelector("div:nth-child(2) >div >div")));
 
         if (!app.getUser().isLoginTabPresent()) {
             app.getUser().clickOnSignOutButton();

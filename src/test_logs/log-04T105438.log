@@ -1,0 +1,9 @@
+10:54:40.975 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTestwith data: [Oliver, Nouer, 122222, neuer1222@web.de, Dresden, goalkeeper]
+10:54:55.104 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromDataProviderTest
+10:54:55.105 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+10:54:55.107 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTestwith data: [Oliver22, Nouer, 2555555, neuer+2555@web.de, Dresden, goalkeeper]
+10:54:58.484 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromDataProviderTest
+10:54:58.487 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+10:54:58.488 [main] INFO  com.telran.contact.tests.TestBase - Start test addContactPositiveFromDataProviderTestwith data: [Oliver33, Nouer, 3555555, neuer+3555@web.de, Dresden, goalkeeper]
+10:55:01.835 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method addContactPositiveFromDataProviderTest
+10:55:01.836 [main] INFO  com.telran.contact.tests.TestBase - ==========================

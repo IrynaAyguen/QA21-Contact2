@@ -41,7 +41,7 @@ public class HelperBase {
     }
 
     public boolean isAlertPresent() {
-        Alert alert = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.alertIsPresent());
+        Alert alert = new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
         if(alert == null){
             return false;
         }else{
@@ -59,7 +59,7 @@ public class HelperBase {
     }
 
     public void pause(int millis){
-       new WebDriverWait(driver, Duration.ofSeconds(millis));
+       new WebDriverWait(driver, millis);
     }
 
 //    public void jump() {

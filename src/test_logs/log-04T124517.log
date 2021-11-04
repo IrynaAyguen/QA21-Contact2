@@ -1,0 +1,60 @@
+12:45:19.499 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@21680803]
+12:45:20.551 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:20.552 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:20.554 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@91c4a3f]
+12:45:21.538 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:21.541 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:21.542 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@383f3558]
+12:45:22.584 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:22.584 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:22.585 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@682c1e93]
+12:45:23.617 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:23.617 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:23.618 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@5ee34b1b]
+12:45:24.608 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:24.608 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:24.610 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@6a9d5dff]
+12:45:25.633 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:25.633 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:25.633 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@2ff95fc6]
+12:45:26.653 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:26.653 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:26.653 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@4b2d44bc]
+12:45:27.662 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:27.663 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:27.663 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@479f2dc2]
+12:45:28.679 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:28.680 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:28.682 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@4eb45fec]
+12:45:29.713 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:29.714 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:29.716 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@1aa6e3c0]
+12:45:30.728 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:30.728 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:30.729 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@1bc776b7]
+12:45:31.726 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:31.727 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:31.729 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@33899f7a]
+12:45:32.727 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:32.728 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:32.729 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@296e281a]
+12:45:33.723 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:33.724 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:33.724 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@b9a77c8]
+12:45:34.741 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:34.741 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:34.743 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@d1d8e1a]
+12:45:35.741 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:35.741 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:35.742 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@4b5a078a]
+12:45:36.744 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:36.745 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:36.746 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@97a145b]
+12:45:37.739 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:37.740 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:37.741 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@66deec87]
+12:45:38.737 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:38.738 [main] INFO  com.telran.contact.tests.TestBase - ==========================
+12:45:38.739 [main] INFO  com.telran.contact.tests.TestBase - Start test registrationNegativeFromCSVTestwith data: [com.telran.contact.models.User@65bad087]
+12:45:39.752 [main] INFO  com.telran.contact.tests.TestBase - PASSED: test method registrationNegativeFromCSVTest
+12:45:39.752 [main] INFO  com.telran.contact.tests.TestBase - ==========================
