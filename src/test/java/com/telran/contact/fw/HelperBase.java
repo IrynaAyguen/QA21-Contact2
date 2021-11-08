@@ -1,10 +1,14 @@
 package com.telran.contact.fw;
 
+import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.imageio.IIOException;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class HelperBase {
@@ -12,14 +16,14 @@ public class HelperBase {
     static WebDriver driver;
 
     public HelperBase(WebDriver driver) {
-        this.driver=driver;
+        this.driver = driver;
     }
 
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size() > 0;
     }
 
-    public boolean isElementPresent2(By locator){
+    public boolean isElementPresent2(By locator) {
         try {
             driver.findElement(locator);
             return true;
@@ -28,7 +32,7 @@ public class HelperBase {
         }
     }
 
-    public void click(By locator){
+    public void click(By locator) {
         driver.findElement(locator).click();
     }
 
@@ -42,9 +46,9 @@ public class HelperBase {
 
     public boolean isAlertPresent() {
         Alert alert = new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
-        if(alert == null){
+        if (alert == null) {
             return false;
-        }else{
+        } else {
             driver.switchTo().alert();
             alert.accept();
             return true;
@@ -58,8 +62,19 @@ public class HelperBase {
         element.click();
     }
 
-    public void pause(int millis){
-       new WebDriverWait(driver, millis);
+    public void pause(int millis) {
+        new WebDriverWait(driver, millis);
+    }
+
+    public String takeScreenshot() {
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File("screenshot/screen-" + System.currentTimeMillis() + ".png");
+        try {
+            Files.copy(tmp, screenshot);
+        }catch ( IOException e) {
+            e.printStackTrace();
+        }
+        return screenshot.getAbsolutePath();
     }
 
 //    public void jump() {

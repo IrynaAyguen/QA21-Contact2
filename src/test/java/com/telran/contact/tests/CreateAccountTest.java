@@ -19,7 +19,7 @@ public class CreateAccountTest extends TestBase {
     }
 
     @Test ()
-    public void registrationPositiveTest() {
+    public void registrationPositiveTest() throws InterruptedException {
         // click on Login
         app.getUser().clickOnLoginTab();
         Assert.assertTrue(app.getUser().isLoginRegistrationFormPresent());
@@ -27,7 +27,9 @@ public class CreateAccountTest extends TestBase {
                 .setEmail("ira@web.de")
                 .setPassword("Ira123123_"));
         // check Logout button displied
+        Thread.sleep(2000);
         Assert.assertTrue(app.getUser().isSingOutTabPresent());
+        Thread.sleep(2000);
     }
 
     @Test
