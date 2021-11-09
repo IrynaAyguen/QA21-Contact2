@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.contact.tests.HeaderTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-11-03T13:56:42" hostname="LAPTOP-ND6M733L" time="19.13">
+  <properties/>
+  <testcase name="headerTabAboutTest" classname="com.telran.contact.tests.HeaderTests" time="0.071"/>
+  <testcase name="headerTabAddTest" classname="com.telran.contact.tests.HeaderTests" time="0.691"/>
+  <testcase name="headerTabContactsTest" classname="com.telran.contact.tests.HeaderTests" time="2.37"/>
+  <testcase name="headerTabHomeTest" classname="com.telran.contact.tests.HeaderTests" time="0.048"/>
+  <testcase name="headerTabLoginTest" classname="com.telran.contact.tests.HeaderTests" time="0.042"/>
+  <testcase name="headerTabSignOutTest" classname="com.telran.contact.tests.HeaderTests" time="0.508"/>
+  <system-out><![CDATA[Site is opened! HomeComponent:true
+Site is opened! HomeComponent:false
+Site is opened! HomeComponent:true
+Site is opened! HomeComponent:false
+Site is opened! HomeComponent:true
+Site is opened! HomeComponent:false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

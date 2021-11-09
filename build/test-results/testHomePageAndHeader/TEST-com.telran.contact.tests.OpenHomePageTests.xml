@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.contact.tests.OpenHomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-03T13:57:01" hostname="LAPTOP-ND6M733L" time="3.043">
+  <properties/>
+  <testcase name="homePageTest" classname="com.telran.contact.tests.OpenHomePageTests" time="3.043"/>
+  <system-out><![CDATA[Site opened
+HomeComponent:false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
