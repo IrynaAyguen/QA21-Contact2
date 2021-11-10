@@ -59,13 +59,13 @@ public class RestAssuredTests {
         String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjExMTExQHdlYi5kZSJ9.XMxzoF3pIQTNEcl-jRTsPo8cYvJeTf3FE4p3k8IiF5U";
 
         AddNewContactRequestDto contactDto = AddNewContactRequestDto.builder()
-                .address("Moscow 123")
-                .description("sister")
-                .email("sveta123@web.de")
+                .address("Moscow 5678")
+                .description("sister5678")
+                .email("sveta5678@web.de")
                 .id(0)
                 .lastName("Svetlanova")
                 .name("Svetlana")
-                .phone("+4910030000")
+                .phone("+4910035678")
                 .build();
 
         int id = RestAssured.given()
@@ -109,38 +109,31 @@ public class RestAssuredTests {
 
     }
 
-    @Test //HOME WORK 3  error=?????
+    @Test //HOME WORK 3
     public void addNewContactNegativeRestAssuredTest() {
 
         String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjExMTExQHdlYi5kZSJ9.XMxzoF3pIQTNEcl-jRTsPo8cYvJeTf3FE4p3k8IiF5U";
 
         AddNewContactRequestDto contactDto = AddNewContactRequestDto.builder()
-                .address("Moscow ")
-                .description("sister")
-                .email("sveta999@web.de")  //email is not unique
+                .address("")   // invalid format - withiut adresse
+                .description("sister5678")
+                .email("svetlana@web.")
                 .id(0)
                 .lastName("Svetlanova")
                 .name("Svetlana")
-                .phone("+499888888")
+                .phone("+4555")
                 .build();
 
-        AddNewContactResponseDto responseDto = RestAssured.given()
+        String errorMessage = RestAssured.given()
                 .header("Authorization", token)
                 .contentType("application/json")
                 .body(contactDto)
                 .post("contact")
                 .then().assertThat()
-                .statusCode(200)
-                .extract().response().as(AddNewContactResponseDto.class);
+                .statusCode(400)
+                .extract().path("message");
 
-                // in HttpClient
-        // AddNewContactErrorDto error = gson.fromJson(sb.toString(), AddNewContactErrorDto.class);
-                //in OkHttp
-        // AddNewContactErrorDto error = gson.fromJson(responseJson, AddNewContactErrorDto.class);
-        
-        // AddNewContactErrorDto error =
-        // System.out.println(error.getCode());
-        // System.out.println(error.getMessage());
+         System.out.println(errorMessage);
 
     }
 }
