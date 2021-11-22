@@ -1,13 +1,11 @@
 package com.telran.contact.api.tests;
 
-import com.google.gson.Gson;
 import com.jayway.restassured.RestAssured;
 import com.telran.contact.api.dto.*;
-import okhttp3.OkHttpClient;
-import okhttp3.Response;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -28,7 +26,7 @@ public class RestAssuredTests {
                 .password("Ira123123_")
                 .build();
 
-        AuthResponseDto responseDto = RestAssured.given()
+        AuthResponseDto responseDto = given()
                 .contentType("application/json")
                 .body(requestDto)
                 .post("login")
@@ -40,7 +38,7 @@ public class RestAssuredTests {
 
         String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImlyYUB3ZWIuZGUifQ.ncWvCxA8tqNwZ8DhwlJJJAGdLVRQIXSxRKMjd9cvr28";
 
-        String responseToken = RestAssured.given()
+        String responseToken = given()
                 .contentType("application/json")
                 .body(requestDto)
                 .post("login")
@@ -68,7 +66,7 @@ public class RestAssuredTests {
                 .phone("+4910035678")
                 .build();
 
-        int id = RestAssured.given()
+        int id = given()
                 .header("Authorization", token)
                 .contentType("application/json")
                 .body(contactDto)
@@ -95,7 +93,7 @@ public class RestAssuredTests {
                 .name("Svetlana")
                 .phone("+4999999999")
                 .build();
-        UpdateContactResponseDto responseDto = RestAssured.given()
+        UpdateContactResponseDto responseDto = given()
                 .header("Authorization", token)
                 .contentType("application/json")
                 .body(contactDto)
@@ -106,7 +104,6 @@ public class RestAssuredTests {
 
         System.out.println("id:" + responseDto.getId() + " lastName:" + responseDto.getLastName()
                 + " email:" + responseDto.getEmail() + " phone:" + responseDto.getPhone());
-
     }
 
     @Test //HOME WORK 3
@@ -117,14 +114,14 @@ public class RestAssuredTests {
         AddNewContactRequestDto contactDto = AddNewContactRequestDto.builder()
                 .address("")   // invalid format - withiut adresse
                 .description("sister5678")
-                .email("svetlana@web.")
+                .email("svetlana@web.de")
                 .id(0)
                 .lastName("Svetlanova")
                 .name("Svetlana")
                 .phone("+4555")
                 .build();
 
-        String errorMessage = RestAssured.given()
+        String errorMessage = given()
                 .header("Authorization", token)
                 .contentType("application/json")
                 .body(contactDto)
@@ -133,7 +130,55 @@ public class RestAssuredTests {
                 .statusCode(400)
                 .extract().path("message");
 
-         System.out.println(errorMessage);
+        System.out.println(errorMessage);
+    }
 
+    @Test
+    public void getAllContactsTest() {
+
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjExMTExQHdlYi5kZSJ9.XMxzoF3pIQTNEcl-jRTsPo8cYvJeTf3FE4p3k8IiF5U";
+
+        GetAllContactDto responseDto = given()
+                .header("Authorization", token)
+                .get("contact")
+                .then().assertThat()
+                .statusCode(200)
+                .extract().body().as(GetAllContactDto.class);
+
+        for (ContactDto contact : responseDto.getContacts()) {
+            System.out.println(contact.getId() + "***" + contact.getName() + "***");
+            System.out.println("================================================");
+        }
+    }
+
+    @Test
+    public void deleteContactTest() {
+
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjExMTExQHdlYi5kZSJ9.XMxzoF3pIQTNEcl-jRTsPo8cYvJeTf3FE4p3k8IiF5U";
+
+        String status = given()
+                .header("Authorization", token)
+                .delete("contact/18142")
+                .then()
+                .assertThat().statusCode(200)
+                .extract().path("status");
+
+        System.out.println(status);
+    }
+
+    @Test
+    public void deleteAllContactsTest() {
+
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjExMTExQHdlYi5kZSJ9.XMxzoF3pIQTNEcl-jRTsPo8cYvJeTf3FE4p3k8IiF5U";
+
+        String status = given()
+                .header("Authorization", token)
+                .delete("clear")
+                .then()
+                .assertThat().statusCode(200)
+                .extract().path("status");
+
+        System.out.println(status);
     }
 }
+
